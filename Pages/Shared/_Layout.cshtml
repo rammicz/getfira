@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@(ViewData["Title"] != null ? ViewData["Title"] + " — Fira" : "Fira — Financial clarity for growing businesses")</title>
+    <meta name="description" content="Fira gives growing businesses real-time dashboards, forecasting, and financial reports so you can make better decisions faster." />
+    <meta property="og:title" content="Fira — Financial clarity for growing businesses" />
+    <meta property="og:description" content="Real-time dashboards, forecasting, and financial reports for growing businesses." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo" aria-label="Fira home">Fira</a>
+
+            <nav class="nav-desktop" aria-label="Main navigation">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <span id="theme-icon" aria-hidden="true">&#9790;</span>
+                </button>
+                <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-overlay" class="mobile-drawer-overlay" aria-hidden="true"></div>
+    <nav id="mobile-drawer" class="mobile-drawer" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+        <button id="drawer-close" class="drawer-close" type="button" aria-label="Close menu">&times;</button>
+        <div class="mobile-nav">
+            <a href="#features" class="mobile-nav-link">Features</a>
+            <a href="#benefits" class="mobile-nav-link">Benefits</a>
+            <a href="#how-it-works" class="mobile-nav-link">How It Works</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    &copy; 2026 Fira. Developed by <a href="https://abago.cz" target="_blank" rel="noopener">abago.cz</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-icon" aria-label="Twitter">X</a>
+                    <a href="#" class="social-icon" aria-label="GitHub">GH</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

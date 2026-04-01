@@ -1,0 +1,374 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Financial clarity for growing businesses";
+}
+
+<!-- Hero -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Financial clarity for growing businesses</h1>
+            <p class="hero-subtitle">
+                Fira brings your financial data together into one platform with real-time dashboards,
+                automated forecasting, and reports that actually make sense — so you can focus on
+                growing your business, not chasing spreadsheets.
+            </p>
+            <div class="hero-ctas">
+                <a href="#contact" class="btn btn-primary">Start Free Trial</a>
+                <a href="#features" class="btn btn-secondary">See Features</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Proof -->
+<section class="social-proof" aria-label="Key metrics">
+    <div class="container">
+        <div class="proof-grid">
+            <div class="proof-item">
+                <span class="proof-item-value">500+</span>
+                <span class="proof-item-label">Companies trust Fira</span>
+            </div>
+            <div class="proof-item">
+                <span class="proof-item-value">10M+</span>
+                <span class="proof-item-label">Transactions processed</span>
+            </div>
+            <div class="proof-item">
+                <span class="proof-item-value">99.9%</span>
+                <span class="proof-item-label">Uptime guaranteed</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="section" id="features">
+    <div class="container">
+        <h2 class="section-title">Everything you need to run your finances</h2>
+        <p class="section-subtitle">
+            From daily dashboards to year-end reports, Fira handles the heavy lifting so your team
+            can make confident, data-driven decisions.
+        </p>
+
+        <!-- Feature 1: Dashboard -->
+        <div class="feature-block">
+            <div class="feature-text">
+                <div class="feature-icon" aria-hidden="true">&#9707;</div>
+                <h3>Real-time Dashboard &amp; KPIs</h3>
+                <p>
+                    See your revenue, expenses, margins, and cash position at a glance. Fira updates
+                    your KPIs in real time so you always know where your business stands — no manual
+                    exports, no stale numbers.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="~/screenshots/01-dashboard-smoke-check.png"
+                     alt="Fira dashboard showing real-time KPI cards for revenue, expenses, and cash position"
+                     loading="lazy"
+                     width="1280" height="800" />
+            </div>
+        </div>
+
+        <!-- Feature 2: Forecasting -->
+        <div class="feature-block">
+            <div class="feature-text">
+                <div class="feature-icon" aria-hidden="true">&#9783;</div>
+                <h3>Forecasting: Actuals vs Plan</h3>
+                <p>
+                    Compare your financial plan against actual results month by month. Fira highlights
+                    variances automatically so you can spot problems early and adjust your strategy
+                    before they become costly surprises.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="~/screenshots/08-forecast-edit-mode-desktop.png"
+                     alt="Fira forecasting view comparing actuals against budget with variance highlighting"
+                     loading="lazy"
+                     width="1280" height="800" />
+            </div>
+        </div>
+
+        <!-- Feature 3: Reports -->
+        <div class="feature-block">
+            <div class="feature-text">
+                <div class="feature-icon" aria-hidden="true">&#9776;</div>
+                <h3>Financial Reports</h3>
+                <p>
+                    Generate P&amp;L statements, balance sheets, and cash flow reports instantly. Fira
+                    structures your data into clear, standardised reports that are ready for your
+                    board, your investors, or your accountant.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="~/screenshots/01-dashboard-smoke-check.png"
+                     alt="Fira financial reporting view with P&amp;L and balance sheet summaries"
+                     loading="lazy"
+                     width="1280" height="800" />
+            </div>
+        </div>
+
+        <!-- Feature 4: Invoices -->
+        <div class="feature-block">
+            <div class="feature-text">
+                <div class="feature-icon" aria-hidden="true">&#9993;</div>
+                <h3>Invoice &amp; Bank Transaction Management</h3>
+                <p>
+                    Import bank transactions and match them to invoices automatically. Fira reduces
+                    manual reconciliation work and keeps your books accurate with intelligent matching
+                    rules you can customise.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="~/screenshots/03-contracts-kpi-cards.png"
+                     alt="Fira invoice management interface with bank transaction matching"
+                     loading="lazy"
+                     width="1280" height="800" />
+            </div>
+        </div>
+
+        <!-- Feature 5: Contracts -->
+        <div class="feature-block">
+            <div class="feature-text">
+                <div class="feature-icon" aria-hidden="true">&#10003;</div>
+                <h3>Contract Profitability Tracking</h3>
+                <p>
+                    Know exactly which contracts are profitable and which are draining resources. Fira
+                    tracks revenue and costs at the contract level so you can renegotiate, reallocate,
+                    or sunset engagements with confidence.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="~/screenshots/03-contracts-kpi-cards.png"
+                     alt="Fira contract profitability view showing per-contract revenue and margins"
+                     loading="lazy"
+                     width="1280" height="800" />
+            </div>
+        </div>
+
+        <!-- Feature 6: VAT -->
+        <div class="feature-block">
+            <div class="feature-text">
+                <div class="feature-icon" aria-hidden="true">&#9878;</div>
+                <h3>VAT Compliance</h3>
+                <p>
+                    Stay compliant with built-in VAT calculations and reporting. Fira handles Czech
+                    accounting standards out of the box, automatically categorises transactions by VAT
+                    rate, and prepares submission-ready summaries.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="~/screenshots/08-forecast-edit-mode-desktop.png"
+                     alt="Fira VAT compliance dashboard with categorised transactions and reporting"
+                     loading="lazy"
+                     width="1280" height="800" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section class="section section-alt" id="benefits">
+    <div class="container">
+        <h2 class="section-title">Why finance teams choose Fira</h2>
+        <p class="section-subtitle">
+            Less time on manual work, more time on decisions that matter.
+        </p>
+
+        <div class="benefits-grid">
+            <div class="accordion-item" data-open="false">
+                <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="benefit-1">
+                    <span>Save 20+ hours every month</span>
+                    <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </button>
+                <div class="accordion-panel" id="benefit-1" role="region">
+                    <div class="accordion-panel-inner">
+                        Automate the data collection, reconciliation, and reporting tasks that eat into
+                        your week. Fira pulls data from your bank feeds and accounting tools, matches
+                        transactions, and builds reports — giving your team back more than 20 hours a
+                        month to focus on analysis and strategy.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" data-open="false">
+                <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="benefit-2">
+                    <span>Real-time accuracy you can trust</span>
+                    <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </button>
+                <div class="accordion-panel" id="benefit-2" role="region">
+                    <div class="accordion-panel-inner">
+                        Stop working with yesterday's numbers. Fira syncs continuously with your data
+                        sources so every dashboard, report, and forecast reflects your current financial
+                        position — not what it looked like when someone last ran an export.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" data-open="false">
+                <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="benefit-3">
+                    <span>Multi-entity consolidation</span>
+                    <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </button>
+                <div class="accordion-panel" id="benefit-3" role="region">
+                    <div class="accordion-panel-inner">
+                        Running multiple companies or subsidiaries? Fira consolidates financial data
+                        across all your entities into a single view. See group-level metrics alongside
+                        entity breakdowns without juggling separate spreadsheets or systems.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" data-open="false">
+                <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="benefit-4">
+                    <span>Seamless bank integrations</span>
+                    <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </button>
+                <div class="accordion-panel" id="benefit-4" role="region">
+                    <div class="accordion-panel-inner">
+                        Connect your bank accounts and let Fira handle the rest. Transactions flow in
+                        automatically and are matched to your invoices and ledger entries. No more CSV
+                        uploads, no more copy-paste errors, no more reconciliation headaches.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" data-open="false">
+                <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="benefit-5">
+                    <span>Czech accounting standards built in</span>
+                    <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </button>
+                <div class="accordion-panel" id="benefit-5" role="region">
+                    <div class="accordion-panel-inner">
+                        Fira is built with Czech accounting standards at its core. VAT categories, chart
+                        of accounts, and reporting formats follow local requirements out of the box —
+                        so you stay compliant without extra configuration or third-party add-ons.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="section" id="how-it-works">
+    <div class="container">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-subtitle">
+            Get started in minutes, not months.
+        </p>
+
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Connect your data</h3>
+                <p>
+                    Link your bank accounts, import invoices, and connect your existing accounting
+                    tools. Fira pulls everything into one place automatically.
+                </p>
+            </div>
+
+            <div class="step-arrow" aria-hidden="true">&#8594;</div>
+
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Analyse automatically</h3>
+                <p>
+                    Fira categorises transactions, builds dashboards, and generates reports without
+                    manual intervention. Your financial picture updates in real time.
+                </p>
+            </div>
+
+            <div class="step-arrow" aria-hidden="true">&#8594;</div>
+
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Make better decisions</h3>
+                <p>
+                    With clear data at your fingertips, you can spot trends, catch problems early,
+                    and allocate resources where they make the biggest impact.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="section section-alt" id="contact">
+    <div class="container">
+        <h2 class="section-title">Get in touch</h2>
+        <p class="section-subtitle">
+            Ready to bring clarity to your finances? Drop us a message and we will get back to you
+            within one business day.
+        </p>
+
+        <div class="contact-form-wrap">
+            <form id="contact-form" novalidate>
+                <div id="contact-form-fields">
+                    <div class="form-group">
+                        <label class="form-label" for="field-name">Name</label>
+                        <input class="form-input" type="text" id="field-name" name="name"
+                               autocomplete="name" required
+                               aria-describedby="error-name" />
+                        <div class="form-error" id="error-name" role="alert"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="field-email">Email</label>
+                        <input class="form-input" type="email" id="field-email" name="email"
+                               autocomplete="email" required
+                               aria-describedby="error-email" />
+                        <div class="form-error" id="error-email" role="alert"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="field-company">Company name</label>
+                        <input class="form-input" type="text" id="field-company" name="company"
+                               autocomplete="organization" required
+                               aria-describedby="error-company" />
+                        <div class="form-error" id="error-company" role="alert"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="field-message">Message</label>
+                        <textarea class="form-textarea" id="field-message" name="message"
+                                  rows="4" required
+                                  aria-describedby="error-message"></textarea>
+                        <div class="form-error" id="error-message" role="alert"></div>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="field-consent" name="consent" required
+                               aria-describedby="error-consent" />
+                        <label for="field-consent">
+                            I agree to the processing of my personal data in accordance with the
+                            Privacy Policy. Fira will use this information only to respond to my
+                            enquiry.
+                        </label>
+                    </div>
+                    <div class="form-error form-error-consent" id="error-consent" role="alert">
+                        Please confirm that you agree to data processing.
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+                </div>
+
+                <div class="form-success" id="contact-success">
+                    <div class="form-success-icon" aria-hidden="true">&#10004;</div>
+                    <h3>Message sent</h3>
+                    <p>Thank you for reaching out. We will get back to you within one business day.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
