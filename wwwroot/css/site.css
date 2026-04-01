@@ -13,7 +13,7 @@
   --c-text-2: #3b3b3b;
   --c-line: #e7e2d9;
   --c-focus: #1a73e8;
-  --c-error: var(--c-error);
+  --c-error: #d93025;
 
   --c-bg: var(--c-white);
   --c-bg-alt: var(--c-offwhite);
@@ -43,6 +43,7 @@
   --c-heading: #f6f4f0;
   --c-body: #b7aea0;
   --c-border: #2e2c28;
+  --c-error: #f28b82;
   --c-btn-primary-bg: var(--c-offwhite);
   --c-btn-primary-fg: var(--c-text);
   --c-btn-secondary-bg: transparent;
@@ -185,13 +186,13 @@ img {
 
 .section-subtitle {
   text-align: center;
-  max-width: 600px;
+  max-width: 680px;
   margin: 0 auto 48px;
   font-size: 17px;
 }
 
 @media (min-width: 768px) {
-  .section-title { font-size: 36px; }
+  .section-title { font-size: 38px; }
 }
 
 /* ========================================
@@ -202,9 +203,11 @@ img {
   top: 0;
   z-index: 100;
   background: var(--c-bg);
+  background: color-mix(in srgb, var(--c-bg) 85%, transparent);
   border-bottom: 1px solid var(--c-border);
   height: var(--header-h);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .site-header .container {
