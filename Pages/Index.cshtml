@@ -1,22 +1,22 @@
 @page
 @model IndexModel
 @{
-    ViewData["Title"] = "Financial clarity for growing businesses";
+    ViewData["Title"] = "Finanční přehled pro rostoucí firmy";
 }
 
 <!-- Hero -->
 <section class="hero" id="hero">
     <div class="container">
         <div class="hero-content">
-            <h1>Financial clarity for growing businesses</h1>
-            <p class="hero-subtitle">
-                Fira brings your financial data together into one platform with real-time dashboards,
-                automated forecasting, and reports that actually make sense — so you can focus on
-                growing your business, not chasing spreadsheets.
+            <h1 data-i18n="hero-title">Finanční přehled pro rostoucí firmy</h1>
+            <p class="hero-subtitle" data-i18n="hero-subtitle">
+                GetFira.io spojuje vaše finanční data na jedné platformě s real-time dashboardy,
+                automatickým forecastingem a reporty, které dávají smysl — abyste se mohli soustředit
+                na růst firmy, ne na honění tabulek.
             </p>
             <div class="hero-ctas">
-                <a href="#contact" class="btn btn-primary">Start Free Trial</a>
-                <a href="#features" class="btn btn-secondary">See Features</a>
+                <a href="#contact" class="btn btn-primary" data-i18n="hero-cta-primary">Vyzkoušet zdarma</a>
+                <a href="#features" class="btn btn-secondary" data-i18n="hero-cta-secondary">Zobrazit funkce</a>
             </div>
         </div>
     </div>
@@ -28,15 +28,15 @@
         <div class="proof-grid">
             <div class="proof-item">
                 <span class="proof-item-value">500+</span>
-                <span class="proof-item-label">Companies trust Fira</span>
+                <span class="proof-item-label" data-i18n="proof-companies">Firem důvěřuje GetFira.io</span>
             </div>
             <div class="proof-item">
                 <span class="proof-item-value">10M+</span>
-                <span class="proof-item-label">Transactions processed</span>
+                <span class="proof-item-label" data-i18n="proof-transactions">Zpracovaných transakcí</span>
             </div>
             <div class="proof-item">
                 <span class="proof-item-value">99.9%</span>
-                <span class="proof-item-label">Uptime guaranteed</span>
+                <span class="proof-item-label" data-i18n="proof-uptime">Garantovaná dostupnost</span>
             </div>
         </div>
     </div>
@@ -45,26 +45,26 @@
 <!-- Features -->
 <section class="section" id="features">
     <div class="container">
-        <h2 class="section-title">Everything you need to run your finances</h2>
-        <p class="section-subtitle">
-            From daily dashboards to year-end reports, Fira handles the heavy lifting so your team
-            can make confident, data-driven decisions.
+        <h2 class="section-title" data-i18n="features-title">Vše, co potřebujete pro řízení financí</h2>
+        <p class="section-subtitle" data-i18n="features-subtitle">
+            Od denních dashboardů po roční uzávěrky — GetFira.io se postará o těžkou práci,
+            aby váš tým mohl dělat sebevědomá rozhodnutí založená na datech.
         </p>
 
         <!-- Feature 1: Dashboard -->
         <div class="feature-block">
             <div class="feature-text">
                 <div class="feature-icon" aria-hidden="true">&#9707;</div>
-                <h3>Real-time Dashboard &amp; KPIs</h3>
-                <p>
-                    See your revenue, expenses, margins, and cash position at a glance. Fira updates
-                    your KPIs in real time so you always know where your business stands — no manual
-                    exports, no stale numbers.
+                <h3 data-i18n="feature-dashboard-title">Real-time Dashboard &amp; KPI</h3>
+                <p data-i18n="feature-dashboard-desc">
+                    Sledujte tržby, náklady, marže a stav hotovosti na první pohled. GetFira.io
+                    aktualizuje vaše KPI v reálném čase, takže vždy víte, jak na tom vaše firma
+                    je — žádné ruční exporty, žádná zastaralá čísla.
                 </p>
             </div>
             <div class="feature-image">
                 <img src="~/screenshots/01-dashboard-smoke-check.png"
-                     alt="Fira dashboard showing real-time KPI cards for revenue, expenses, and cash position"
+                     alt="GetFira.io dashboard zobrazující real-time KPI karty pro tržby, náklady a stav hotovosti"
                      loading="lazy"
                      width="1280" height="800" />
             </div>
@@ -74,16 +74,16 @@
         <div class="feature-block">
             <div class="feature-text">
                 <div class="feature-icon" aria-hidden="true">&#9783;</div>
-                <h3>Forecasting: Actuals vs Plan</h3>
-                <p>
-                    Compare your financial plan against actual results month by month. Fira highlights
-                    variances automatically so you can spot problems early and adjust your strategy
-                    before they become costly surprises.
+                <h3 data-i18n="feature-forecast-title">Forecasting: Skutečnost vs Plán</h3>
+                <p data-i18n="feature-forecast-desc">
+                    Porovnejte svůj finanční plán se skutečnými výsledky měsíc po měsíci. GetFira.io
+                    automaticky zvýrazňuje odchylky, abyste mohli včas zachytit problémy a upravit
+                    strategii dříve, než se stanou nákladnými překvapeními.
                 </p>
             </div>
             <div class="feature-image">
                 <img src="~/screenshots/08-forecast-edit-mode-desktop.png"
-                     alt="Fira forecasting view comparing actuals against budget with variance highlighting"
+                     alt="GetFira.io forecasting zobrazení porovnávající skutečnost s rozpočtem a zvýrazněním odchylek"
                      loading="lazy"
                      width="1280" height="800" />
             </div>
@@ -93,16 +93,16 @@
         <div class="feature-block">
             <div class="feature-text">
                 <div class="feature-icon" aria-hidden="true">&#9776;</div>
-                <h3>Financial Reports</h3>
-                <p>
-                    Generate P&amp;L statements, balance sheets, and cash flow reports instantly. Fira
-                    structures your data into clear, standardised reports that are ready for your
-                    board, your investors, or your accountant.
+                <h3 data-i18n="feature-reports-title">Finanční reporty</h3>
+                <p data-i18n="feature-reports-desc">
+                    Generujte výkazy P&amp;L, rozvahy a cash flow reporty okamžitě. GetFira.io
+                    strukturuje vaše data do přehledných, standardizovaných reportů připravených
+                    pro vaše vedení, investory nebo účetní.
                 </p>
             </div>
             <div class="feature-image">
                 <img src="~/screenshots/01-dashboard-smoke-check.png"
-                     alt="Fira financial reporting view with P&amp;L and balance sheet summaries"
+                     alt="GetFira.io finanční reporty s přehledy P&amp;L a rozvahy"
                      loading="lazy"
                      width="1280" height="800" />
             </div>
@@ -112,16 +112,16 @@
         <div class="feature-block">
             <div class="feature-text">
                 <div class="feature-icon" aria-hidden="true">&#9993;</div>
-                <h3>Invoice &amp; Bank Transaction Management</h3>
-                <p>
-                    Import bank transactions and match them to invoices automatically. Fira reduces
-                    manual reconciliation work and keeps your books accurate with intelligent matching
-                    rules you can customise.
+                <h3 data-i18n="feature-invoices-title">Správa faktur &amp; bankovních transakcí</h3>
+                <p data-i18n="feature-invoices-desc">
+                    Importujte bankovní transakce a párujte je s fakturami automaticky. GetFira.io
+                    snižuje ruční práci s odsouhlasením a udržuje vaše účetnictví přesné díky
+                    inteligentním pravidlům párování, která si můžete přizpůsobit.
                 </p>
             </div>
             <div class="feature-image">
                 <img src="~/screenshots/03-contracts-kpi-cards.png"
-                     alt="Fira invoice management interface with bank transaction matching"
+                     alt="GetFira.io rozhraní pro správu faktur s párováním bankovních transakcí"
                      loading="lazy"
                      width="1280" height="800" />
             </div>
@@ -131,16 +131,16 @@
         <div class="feature-block">
             <div class="feature-text">
                 <div class="feature-icon" aria-hidden="true">&#10003;</div>
-                <h3>Contract Profitability Tracking</h3>
-                <p>
-                    Know exactly which contracts are profitable and which are draining resources. Fira
-                    tracks revenue and costs at the contract level so you can renegotiate, reallocate,
-                    or sunset engagements with confidence.
+                <h3 data-i18n="feature-contracts-title">Sledování ziskovosti zakázek</h3>
+                <p data-i18n="feature-contracts-desc">
+                    Zjistěte přesně, které zakázky jsou ziskové a které vyčerpávají zdroje. GetFira.io
+                    sleduje tržby a náklady na úrovni jednotlivých zakázek, abyste mohli s jistotou
+                    vyjednávat, přerozdělovat nebo ukončovat spolupráce.
                 </p>
             </div>
             <div class="feature-image">
                 <img src="~/screenshots/03-contracts-kpi-cards.png"
-                     alt="Fira contract profitability view showing per-contract revenue and margins"
+                     alt="GetFira.io zobrazení ziskovosti zakázek s tržbami a maržemi na zakázku"
                      loading="lazy"
                      width="1280" height="800" />
             </div>
@@ -150,16 +150,16 @@
         <div class="feature-block">
             <div class="feature-text">
                 <div class="feature-icon" aria-hidden="true">&#9878;</div>
-                <h3>VAT Compliance</h3>
-                <p>
-                    Stay compliant with built-in VAT calculations and reporting. Fira handles Czech
-                    accounting standards out of the box, automatically categorises transactions by VAT
-                    rate, and prepares submission-ready summaries.
+                <h3 data-i18n="feature-vat-title">DPH compliance</h3>
+                <p data-i18n="feature-vat-desc">
+                    Zůstaňte v souladu s předpisy díky vestavěným výpočtům a reportům DPH. GetFira.io
+                    pracuje s českými účetními standardy od základu, automaticky třídí transakce
+                    podle sazby DPH a připravuje souhrny připravené k podání.
                 </p>
             </div>
             <div class="feature-image">
                 <img src="~/screenshots/08-forecast-edit-mode-desktop.png"
-                     alt="Fira VAT compliance dashboard with categorised transactions and reporting"
+                     alt="GetFira.io DPH compliance dashboard s roztříděnými transakcemi a reporty"
                      loading="lazy"
                      width="1280" height="800" />
             </div>
@@ -170,89 +170,90 @@
 <!-- Benefits -->
 <section class="section section-alt" id="benefits">
     <div class="container">
-        <h2 class="section-title">Why finance teams choose Fira</h2>
-        <p class="section-subtitle">
-            Less time on manual work, more time on decisions that matter.
+        <h2 class="section-title" data-i18n="benefits-title">Proč si finanční týmy vybírají GetFira.io</h2>
+        <p class="section-subtitle" data-i18n="benefits-subtitle">
+            Méně času na ruční práci, více času na rozhodnutí, která mají smysl.
         </p>
 
         <div class="benefits-grid">
             <div class="accordion-item" data-open="false">
                 <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="benefit-1">
-                    <span>Save 20+ hours every month</span>
+                    <span data-i18n="benefit-1-title">Ušetřete 20+ hodin měsíčně</span>
                     <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
                         <polyline points="6 9 12 15 18 9" />
                     </svg>
                 </button>
                 <div class="accordion-panel" id="benefit-1" role="region">
-                    <div class="accordion-panel-inner">
-                        Automate the data collection, reconciliation, and reporting tasks that eat into
-                        your week. Fira pulls data from your bank feeds and accounting tools, matches
-                        transactions, and builds reports — giving your team back more than 20 hours a
-                        month to focus on analysis and strategy.
+                    <div class="accordion-panel-inner" data-i18n="benefit-1-desc">
+                        Automatizujte sběr dat, odsouhlasení a reportování, které vám zabírají celý
+                        týden. GetFira.io stahuje data z vašich bankovních zdrojů a účetních nástrojů,
+                        páruje transakce a vytváří reporty — a vrací vašemu týmu více než 20 hodin
+                        měsíčně na analýzu a strategii.
                     </div>
                 </div>
             </div>
 
             <div class="accordion-item" data-open="false">
                 <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="benefit-2">
-                    <span>Real-time accuracy you can trust</span>
+                    <span data-i18n="benefit-2-title">Přesnost v reálném čase, které můžete věřit</span>
                     <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
                         <polyline points="6 9 12 15 18 9" />
                     </svg>
                 </button>
                 <div class="accordion-panel" id="benefit-2" role="region">
-                    <div class="accordion-panel-inner">
-                        Stop working with yesterday's numbers. Fira syncs continuously with your data
-                        sources so every dashboard, report, and forecast reflects your current financial
-                        position — not what it looked like when someone last ran an export.
+                    <div class="accordion-panel-inner" data-i18n="benefit-2-desc">
+                        Přestaňte pracovat se včerejšími čísly. GetFira.io se průběžně synchronizuje
+                        s vašimi datovými zdroji, takže každý dashboard, report a forecast odráží vaši
+                        aktuální finanční pozici — ne to, jak vypadala při posledním exportu.
                     </div>
                 </div>
             </div>
 
             <div class="accordion-item" data-open="false">
                 <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="benefit-3">
-                    <span>Multi-entity consolidation</span>
+                    <span data-i18n="benefit-3-title">Konsolidace více subjektů</span>
                     <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
                         <polyline points="6 9 12 15 18 9" />
                     </svg>
                 </button>
                 <div class="accordion-panel" id="benefit-3" role="region">
-                    <div class="accordion-panel-inner">
-                        Running multiple companies or subsidiaries? Fira consolidates financial data
-                        across all your entities into a single view. See group-level metrics alongside
-                        entity breakdowns without juggling separate spreadsheets or systems.
+                    <div class="accordion-panel-inner" data-i18n="benefit-3-desc">
+                        Řídíte více firem nebo dceřiných společností? GetFira.io konsoliduje finanční
+                        data ze všech vašich subjektů do jednoho zobrazení. Sledujte metriky na úrovni
+                        skupiny i jednotlivých subjektů bez žonglování se samostatnými tabulkami nebo systémy.
                     </div>
                 </div>
             </div>
 
             <div class="accordion-item" data-open="false">
                 <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="benefit-4">
-                    <span>Seamless bank integrations</span>
+                    <span data-i18n="benefit-4-title">Bezproblémové bankovní integrace</span>
                     <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
                         <polyline points="6 9 12 15 18 9" />
                     </svg>
                 </button>
                 <div class="accordion-panel" id="benefit-4" role="region">
-                    <div class="accordion-panel-inner">
-                        Connect your bank accounts and let Fira handle the rest. Transactions flow in
-                        automatically and are matched to your invoices and ledger entries. No more CSV
-                        uploads, no more copy-paste errors, no more reconciliation headaches.
+                    <div class="accordion-panel-inner" data-i18n="benefit-4-desc">
+                        Připojte své bankovní účty a nechte GetFira.io, ať se postará o zbytek.
+                        Transakce přicházejí automaticky a jsou párovány s vašimi fakturami a účetními
+                        záznamy. Žádné CSV uploady, žádné chyby z kopírování, žádné bolesti hlavy
+                        z odsouhlasení.
                     </div>
                 </div>
             </div>
 
             <div class="accordion-item" data-open="false">
                 <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="benefit-5">
-                    <span>Czech accounting standards built in</span>
+                    <span data-i18n="benefit-5-title">České účetní standardy od základu</span>
                     <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
                         <polyline points="6 9 12 15 18 9" />
                     </svg>
                 </button>
                 <div class="accordion-panel" id="benefit-5" role="region">
-                    <div class="accordion-panel-inner">
-                        Fira is built with Czech accounting standards at its core. VAT categories, chart
-                        of accounts, and reporting formats follow local requirements out of the box —
-                        so you stay compliant without extra configuration or third-party add-ons.
+                    <div class="accordion-panel-inner" data-i18n="benefit-5-desc">
+                        GetFira.io je postavena s českými účetními standardy v jádru. Kategorie DPH,
+                        účtová osnova a formáty reportů odpovídají místním požadavkům od začátku —
+                        takže zůstáváte v souladu s předpisy bez extra konfigurace nebo doplňků třetích stran.
                     </div>
                 </div>
             </div>
@@ -263,18 +264,18 @@
 <!-- How It Works -->
 <section class="section" id="how-it-works">
     <div class="container">
-        <h2 class="section-title">How it works</h2>
-        <p class="section-subtitle">
-            Get started in minutes, not months.
+        <h2 class="section-title" data-i18n="how-title">Jak to funguje</h2>
+        <p class="section-subtitle" data-i18n="how-subtitle">
+            Začněte za minuty, ne za měsíce.
         </p>
 
         <div class="steps-grid">
             <div class="step-card">
                 <div class="step-number">1</div>
-                <h3>Connect your data</h3>
-                <p>
-                    Link your bank accounts, import invoices, and connect your existing accounting
-                    tools. Fira pulls everything into one place automatically.
+                <h3 data-i18n="step-1-title">Připojte svá data</h3>
+                <p data-i18n="step-1-desc">
+                    Propojte své bankovní účty, importujte faktury a připojte své stávající účetní
+                    nástroje. GetFira.io vše stáhne na jedno místo automaticky.
                 </p>
             </div>
 
@@ -282,10 +283,10 @@
 
             <div class="step-card">
                 <div class="step-number">2</div>
-                <h3>Analyse automatically</h3>
-                <p>
-                    Fira categorises transactions, builds dashboards, and generates reports without
-                    manual intervention. Your financial picture updates in real time.
+                <h3 data-i18n="step-2-title">Automatická analýza</h3>
+                <p data-i18n="step-2-desc">
+                    GetFira.io třídí transakce, vytváří dashboardy a generuje reporty bez
+                    manuálního zásahu. Váš finanční obraz se aktualizuje v reálném čase.
                 </p>
             </div>
 
@@ -293,10 +294,10 @@
 
             <div class="step-card">
                 <div class="step-number">3</div>
-                <h3>Make better decisions</h3>
-                <p>
-                    With clear data at your fingertips, you can spot trends, catch problems early,
-                    and allocate resources where they make the biggest impact.
+                <h3 data-i18n="step-3-title">Dělejte lepší rozhodnutí</h3>
+                <p data-i18n="step-3-desc">
+                    S jasnými daty na dosah ruky můžete sledovat trendy, zachytit problémy včas
+                    a alokovat zdroje tam, kde mají největší dopad.
                 </p>
             </div>
         </div>
@@ -306,17 +307,17 @@
 <!-- Contact -->
 <section class="section section-alt" id="contact">
     <div class="container">
-        <h2 class="section-title">Get in touch</h2>
-        <p class="section-subtitle">
-            Ready to bring clarity to your finances? Drop us a message and we will get back to you
-            within one business day.
+        <h2 class="section-title" data-i18n="contact-title">Spojte se s námi</h2>
+        <p class="section-subtitle" data-i18n="contact-subtitle">
+            Připraveni vnést přehled do svých financí? Napište nám a ozveme se vám
+            do jednoho pracovního dne.
         </p>
 
         <div class="contact-form-wrap">
             <form id="contact-form" novalidate>
                 <div id="contact-form-fields">
                     <div class="form-group">
-                        <label class="form-label" for="field-name">Name</label>
+                        <label class="form-label" for="field-name" data-i18n="form-name">Jméno</label>
                         <input class="form-input" type="text" id="field-name" name="name"
                                autocomplete="name" required
                                aria-describedby="error-name" />
@@ -324,7 +325,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="field-email">Email</label>
+                        <label class="form-label" for="field-email" data-i18n="form-email">E-mail</label>
                         <input class="form-input" type="email" id="field-email" name="email"
                                autocomplete="email" required
                                aria-describedby="error-email" />
@@ -332,7 +333,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="field-company">Company name</label>
+                        <label class="form-label" for="field-company" data-i18n="form-company">Název firmy</label>
                         <input class="form-input" type="text" id="field-company" name="company"
                                autocomplete="organization" required
                                aria-describedby="error-company" />
@@ -340,7 +341,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="field-message">Message</label>
+                        <label class="form-label" for="field-message" data-i18n="form-message">Zpráva</label>
                         <textarea class="form-textarea" id="field-message" name="message"
                                   rows="4" required
                                   aria-describedby="error-message"></textarea>
@@ -350,23 +351,22 @@
                     <div class="form-checkbox">
                         <input type="checkbox" id="field-consent" name="consent" required
                                aria-describedby="error-consent" />
-                        <label for="field-consent">
-                            I agree to the processing of my personal data in accordance with the
-                            Privacy Policy. Fira will use this information only to respond to my
-                            enquiry.
+                        <label for="field-consent" data-i18n="form-consent">
+                            Souhlasím se zpracováním osobních údajů v souladu se Zásadami ochrany
+                            osobních údajů. GetFira.io použije tyto informace pouze k odpovědi na můj dotaz.
                         </label>
                     </div>
-                    <div class="form-error form-error-consent" id="error-consent" role="alert">
-                        Please confirm that you agree to data processing.
+                    <div class="form-error form-error-consent" id="error-consent" role="alert" data-i18n="form-consent-error">
+                        Potvrďte prosím, že souhlasíte se zpracováním údajů.
                     </div>
 
-                    <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+                    <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="form-submit">Odeslat zprávu</button>
                 </div>
 
                 <div class="form-success" id="contact-success">
                     <div class="form-success-icon" aria-hidden="true">&#10004;</div>
-                    <h3>Message sent</h3>
-                    <p>Thank you for reaching out. We will get back to you within one business day.</p>
+                    <h3 data-i18n="form-success-title">Zpráva odeslána</h3>
+                    <p data-i18n="form-success-desc">Děkujeme, že jste nás kontaktovali. Ozveme se vám do jednoho pracovního dne.</p>
                 </div>
             </form>
         </div>

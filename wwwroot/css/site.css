@@ -1,5 +1,5 @@
 /* ========================================
-   Fira Landing Page — Design Tokens & Styles
+   GetFira.io Landing Page — Design Tokens & Styles
    Scandinavian-inspired, clean, minimal
    ======================================== */
 
@@ -253,6 +253,29 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-pill);
+  height: 40px;
+  min-width: 40px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--c-heading);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all var(--transition);
+}
+
+.lang-toggle:hover {
+  background: var(--c-bg-alt);
 }
 
 .theme-toggle {
