@@ -1,0 +1,15 @@
+bin/
+obj/
+.git/
+.gitignore
+.vs/
+.vscode/
+.screenshots/
+*.user
+*.suo
+*.md
+publish/
+docker-compose*.yml
+Dockerfile
+.env*
+*.pem

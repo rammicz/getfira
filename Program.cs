@@ -1,6 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
+builder.Services.AddHealthChecks();
 
 var app = builder.Build();
 
@@ -14,6 +15,7 @@ app.UseHttpsRedirection();
 app.UseRouting();
 app.UseStaticFiles();
 app.MapStaticAssets();
+app.MapHealthChecks("/health");
 app.MapRazorPages()
    .WithStaticAssets();
 
