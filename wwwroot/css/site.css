@@ -842,6 +842,12 @@ img {
 .contact-info-link {
   font-size: 1.25rem;
   font-weight: 600;
+  color: var(--c-heading);
+  text-decoration: none;
+}
+
+.contact-info-link:hover {
+  text-decoration: underline;
 }
 
 /* ========================================
