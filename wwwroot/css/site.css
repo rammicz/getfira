@@ -819,123 +819,29 @@ img {
 /* ========================================
    CONTACT
    ======================================== */
-.contact-form-wrap {
-  max-width: 560px;
+.contact-info-wrap {
+  max-width: 480px;
   margin: 0 auto;
-  background: var(--c-surface);
-  border: 1px solid var(--c-border);
-  border-radius: var(--radius);
-  padding: 32px 24px;
-}
-
-@media (min-width: 768px) {
-  .contact-form-wrap { padding: 40px 36px; }
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-label {
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--c-heading);
-  margin-bottom: 6px;
-}
-
-.form-input,
-.form-textarea {
-  width: 100%;
-  padding: 12px 14px;
-  font-family: var(--font-body);
-  font-size: 15px;
-  line-height: 1.5;
-  color: var(--c-heading);
-  background: var(--c-bg);
-  border: 1px solid var(--c-border);
-  border-radius: 8px;
-  transition: border-color var(--transition), box-shadow var(--transition);
-}
-
-.form-input:focus,
-.form-textarea:focus {
-  outline: none;
-  border-color: var(--c-focus);
-  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
-}
-
-.form-input.error,
-.form-textarea.error {
-  border-color: var(--c-error);
-}
-
-.form-textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.form-error {
-  font-size: 13px;
-  color: var(--c-error);
-  margin-top: 4px;
-  display: none;
-}
-
-.form-error.visible {
-  display: block;
-}
-
-.form-checkbox {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 24px;
-}
-
-.form-checkbox input[type="checkbox"] {
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
-  margin-top: 0;
-  accent-color: var(--c-focus);
-  cursor: pointer;
-}
-
-.form-error-consent {
-  margin-top: -16px;
-  margin-bottom: 16px;
-}
-
-.form-checkbox label {
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--c-body);
-  cursor: pointer;
-}
-
-.form-success {
   text-align: center;
-  padding: 40px 20px;
-  display: none;
 }
 
-.form-success.visible {
-  display: block;
+.contact-info-item {
+  margin-bottom: 1.5rem;
 }
 
-.form-success-icon {
-  font-size: 48px;
-  margin-bottom: 16px;
+.contact-info-item:last-child {
+  margin-bottom: 0;
 }
 
-.form-success h3 {
-  font-size: 22px;
-  margin-bottom: 8px;
+.contact-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
 }
 
-.form-success p {
-  font-size: 15px;
+.contact-info-link {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 /* ========================================
@@ -973,48 +879,6 @@ img {
   font-weight: 600;
 }
 
-.footer-links {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.footer-link {
-  font-size: 14px;
-  color: var(--c-body);
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  color: var(--c-heading);
-  text-decoration: underline;
-}
-
-.social-icons {
-  display: flex;
-  gap: 12px;
-}
-
-.social-icon {
-  width: 36px;
-  height: 36px;
-  min-width: 36px;
-  border-radius: 50%;
-  border: 1px solid var(--c-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--c-body);
-  text-decoration: none;
-  transition: all var(--transition);
-  font-size: 16px;
-}
-
-.social-icon:hover {
-  background: var(--c-bg-alt);
-  color: var(--c-heading);
-  text-decoration: none;
-}
 
 /* ========================================
    UTILITY
@@ -1084,23 +948,6 @@ body.scroll-locked { overflow: hidden; }
 .reveal-stagger > .reveal:nth-child(4) { transition-delay: 360ms; }
 .reveal-stagger > .reveal:nth-child(5) { transition-delay: 480ms; }
 
-/* ========================================
-   FORM SUCCESS ANIMATION
-   ======================================== */
-@keyframes formSuccessIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.form-success.visible {
-  animation: formSuccessIn 500ms var(--ease-out-expo) both;
-}
 
 /* ========================================
    STEP ARROW PULSE

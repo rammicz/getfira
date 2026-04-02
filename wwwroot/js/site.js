@@ -16,7 +16,7 @@
       // Hero
       'hero-title': 'Kompletní finanční přehled o všech vašich firmách',
       'hero-subtitle': 'GetFira.io spojuje vaše finanční data na jedné platformě s přehlednými dashboardy, forecastingem a reporty, které dávají smysl. Soustřeďte se na růst firmy, ne na překlikávání mezi excely.',
-      'hero-cta-primary': 'Vyzkoušet zdarma',
+      'hero-cta-primary': 'Získat VIP přístup',
       'hero-cta-secondary': 'Zobrazit funkce',
       // Social proof
       'proof-1-value': 'Pro všechny vaše firmy',
@@ -39,9 +39,9 @@
       'feature-contracts-title': 'Sledování ziskovosti zakázek',
       'feature-contracts-desc': 'Zjistěte přesně, které zakázky jsou ziskové a které vyčerpávají zdroje. GetFira.io sleduje tržby a náklady na úrovni jednotlivých zakázek, abyste mohli s jistotou vyjednávat, přerozdělovat nebo ukončovat spolupráce.',
       'feature-vat-title': 'DPH compliance',
-      'feature-vat-desc': 'Zůstaňte v souladu s předpisy díky vestavěným výpočtům a reportům DPH. GetFira.io pracuje s českými účetními standardy od základu, automaticky třídí transakce podle sazby DPH a připravuje souhrny připravené k podání.',
+      'feature-vat-desc': 'Mějte přehled o DPH díky vestavěným výpočtům a reportům. GetFira.io pracuje s českými účetními standardy od základu a automaticky třídí transakce podle sazby DPH pro lepší analytický přehled.',
       // Benefits
-      'benefits-title': 'Proč si finanční týmy vybírají GetFira.io',
+      'benefits-title': 'Proč si vybrat GetFira.io',
       'benefits-subtitle': 'Méně času na ruční práci, více času na rozhodnutí, která mají smysl.',
       'benefit-1-title': 'Méně ruční práce',
       'benefit-1-desc': 'Automatizujte sběr dat a reportování. GetFira.io načítá data z vašich účetních nástrojů a bankovních zdrojů a vytváří přehledy. Váš tým se může věnovat analýze a strategii místo ručního zpracování.',
@@ -50,7 +50,7 @@
       'benefit-3-title': 'Konsolidace více subjektů',
       'benefit-3-desc': 'Řídíte více firem nebo dceřiných společností? GetFira.io konsoliduje finanční data ze všech vašich subjektů do jednoho zobrazení. Sledujte metriky na úrovni skupiny i jednotlivých subjektů bez žonglování se samostatnými tabulkami nebo systémy.',
       'benefit-4-title': 'Bezproblémové bankovní integrace',
-      'benefit-4-desc': 'Připojte své bankovní účty a nechte GetFira.io, ať načte transakce. Data se automaticky zobrazují vedle vašich účetních záznamů. Žádné CSV uploady, žádné chyby z kopírování.',
+      'benefit-4-desc': 'Připojte své bankovní účty a nechte GetFira.io, ať načte transakce. Data se automaticky zobrazují vedle vašich účetních záznamů. Žádné chyby z kopírování.',
       'benefit-5-title': 'České účetní standardy od základu',
       'benefit-5-desc': 'GetFira.io je postavena s českými účetními standardy v jádru. Kategorie DPH, účtová osnova a formáty reportů odpovídají místním požadavkům od začátku. Zůstáváte v souladu s předpisy bez extra konfigurace nebo doplňků třetích stran.',
       // How it works
@@ -62,27 +62,8 @@
       'step-2-desc': 'GetFira.io třídí transakce, vytváří dashboardy a generuje reporty bez manuálního zásahu. Váš finanční obraz se pravidelně aktualizuje.',
       'step-3-title': 'Dělejte lepší rozhodnutí',
       'step-3-desc': 'S jasnými daty na dosah ruky můžete sledovat trendy, zachytit problémy včas a alokovat zdroje tam, kde mají největší dopad.',
-      // Contact
-      'contact-title': 'Spojte se s námi',
-      'contact-subtitle': 'Připraveni vnést přehled do svých financí? Napište nám a rádi se vám ozveme.',
-      'form-name': 'Jméno',
-      'form-email': 'E-mail',
-      'form-company': 'Název firmy',
-      'form-message': 'Zpráva',
-      'form-consent': 'Souhlasím se zpracováním osobních údajů v souladu se Zásadami ochrany osobních údajů. GetFira.io použije tyto informace pouze k odpovědi na můj dotaz.',
-      'form-consent-error': 'Potvrďte prosím, že souhlasíte se zpracováním údajů.',
-      'form-submit': 'Odeslat zprávu',
-      'form-success-title': 'Zpráva odeslána',
-      'form-success-desc': 'Děkujeme, že jste nás kontaktovali. Ozveme se vám co nejdříve.',
       // Footer
-      'footer-brand': '&copy; 2026 GetFira.io. Vyvinula <a href="https://abago.cz" target="_blank" rel="noopener">abago.cz</a>',
-      'footer-privacy': 'Zásady ochrany osobních údajů',
-      'footer-terms': 'Obchodní podmínky',
-      // Validation messages
-      'error-name': 'Zadejte prosím své jméno.',
-      'error-email': 'Zadejte prosím platnou e-mailovou adresu.',
-      'error-company': 'Zadejte prosím název firmy.',
-      'error-message': 'Zadejte prosím zprávu.'
+      'footer-brand': '&copy; 2026 GetFira.io. Vyvinula <a href="https://abago.cz" target="_blank" rel="noopener">abago.cz</a>'
     },
     en: {
       // Nav
@@ -97,7 +78,7 @@
       // Hero
       'hero-title': 'Complete financial overview across all your companies',
       'hero-subtitle': 'GetFira.io brings your financial data together into one platform with clear dashboards, forecasting, and reports that actually make sense. Focus on growing your business, not toggling between spreadsheets.',
-      'hero-cta-primary': 'Start Free Trial',
+      'hero-cta-primary': 'Get VIP Access',
       'hero-cta-secondary': 'See Features',
       // Social proof
       'proof-1-value': 'All your companies',
@@ -120,9 +101,9 @@
       'feature-contracts-title': 'Contract Profitability Tracking',
       'feature-contracts-desc': 'Know exactly which contracts are profitable and which are draining resources. GetFira.io tracks revenue and costs at the contract level so you can renegotiate, reallocate, or sunset engagements with confidence.',
       'feature-vat-title': 'VAT Compliance',
-      'feature-vat-desc': 'Stay compliant with built-in VAT calculations and reporting. GetFira.io handles Czech accounting standards out of the box, automatically categorises transactions by VAT rate, and prepares submission-ready summaries.',
+      'feature-vat-desc': 'Keep track of VAT with built-in calculations and reports. GetFira.io handles Czech accounting standards out of the box and automatically categorises transactions by VAT rate for better analytical insight.',
       // Benefits
-      'benefits-title': 'Why finance teams choose GetFira.io',
+      'benefits-title': 'Why choose GetFira.io',
       'benefits-subtitle': 'Less time on manual work, more time on decisions that matter.',
       'benefit-1-title': 'Less manual work',
       'benefit-1-desc': 'Automate data collection and reporting. GetFira.io pulls data from your accounting tools and bank feeds and builds reports. Your team can focus on analysis and strategy instead of manual processing.',
@@ -131,7 +112,7 @@
       'benefit-3-title': 'Multi-entity consolidation',
       'benefit-3-desc': 'Running multiple companies or subsidiaries? GetFira.io consolidates financial data across all your entities into a single view. See group-level metrics alongside entity breakdowns without juggling separate spreadsheets or systems.',
       'benefit-4-title': 'Seamless bank integrations',
-      'benefit-4-desc': 'Connect your bank accounts and let GetFira.io pull in transactions. Data is automatically displayed alongside your accounting records. No more CSV uploads, no more copy-paste errors.',
+      'benefit-4-desc': 'Connect your bank accounts and let GetFira.io pull in transactions. Data is automatically displayed alongside your accounting records. No more copy-paste errors.',
       'benefit-5-title': 'Czech accounting standards built in',
       'benefit-5-desc': 'GetFira.io is built with Czech accounting standards at its core. VAT categories, chart of accounts, and reporting formats follow local requirements out of the box. You stay compliant without extra configuration or third-party add-ons.',
       // How it works
@@ -143,27 +124,8 @@
       'step-2-desc': 'GetFira.io categorises transactions, builds dashboards, and generates reports without manual intervention. Your financial picture updates regularly.',
       'step-3-title': 'Make better decisions',
       'step-3-desc': 'With clear data at your fingertips, you can spot trends, catch problems early, and allocate resources where they make the biggest impact.',
-      // Contact
-      'contact-title': 'Get in touch',
-      'contact-subtitle': 'Ready to bring clarity to your finances? Drop us a message and we will be happy to get back to you.',
-      'form-name': 'Name',
-      'form-email': 'Email',
-      'form-company': 'Company name',
-      'form-message': 'Message',
-      'form-consent': 'I agree to the processing of my personal data in accordance with the Privacy Policy. GetFira.io will use this information only to respond to my enquiry.',
-      'form-consent-error': 'Please confirm that you agree to data processing.',
-      'form-submit': 'Send Message',
-      'form-success-title': 'Message sent',
-      'form-success-desc': 'Thank you for reaching out. We will get back to you as soon as possible.',
       // Footer
-      'footer-brand': '&copy; 2026 GetFira.io. Developed by <a href="https://abago.cz" target="_blank" rel="noopener">abago.cz</a>',
-      'footer-privacy': 'Privacy Policy',
-      'footer-terms': 'Terms of Service',
-      // Validation messages
-      'error-name': 'Please enter your name.',
-      'error-email': 'Please enter a valid email address.',
-      'error-company': 'Please enter your company name.',
-      'error-message': 'Please enter a message.'
+      'footer-brand': '&copy; 2026 GetFira.io. Developed by <a href="https://abago.cz" target="_blank" rel="noopener">abago.cz</a>'
     }
   };
 
@@ -339,78 +301,6 @@
       });
     });
 
-    // --- Contact Form ---
-    var form = document.getElementById('contact-form');
-    var formEl = document.getElementById('contact-form-fields');
-    var success = document.getElementById('contact-success');
-    var formFields = [
-      { id: 'name', key: 'error-name' },
-      { id: 'email', key: 'error-email' },
-      { id: 'company', key: 'error-company' },
-      { id: 'message', key: 'error-message' }
-    ];
-
-    function getValidationMsg(key) {
-      return translations[currentLang][key] || '';
-    }
-
-    if (form) {
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var valid = true;
-
-        formFields.forEach(function (f) {
-          var input = document.getElementById('field-' + f.id);
-          var error = document.getElementById('error-' + f.id);
-          var value = input.value.trim();
-          var isInvalid = false;
-
-          if (!value) {
-            isInvalid = true;
-          } else if (f.id === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-            isInvalid = true;
-          }
-
-          if (isInvalid) {
-            valid = false;
-            input.classList.add('error');
-            error.textContent = getValidationMsg(f.key);
-            error.classList.add('visible');
-            input.setAttribute('aria-invalid', 'true');
-          } else {
-            input.classList.remove('error');
-            error.classList.remove('visible');
-            input.removeAttribute('aria-invalid');
-          }
-        });
-
-        var consent = document.getElementById('field-consent');
-        var consentError = document.getElementById('error-consent');
-        if (!consent.checked) {
-          valid = false;
-          consentError.classList.add('visible');
-        } else {
-          consentError.classList.remove('visible');
-        }
-
-        if (valid) {
-          formEl.style.display = 'none';
-          success.classList.add('visible');
-        }
-      });
-
-      // Clear errors on input (event delegation)
-      form.addEventListener('input', function (e) {
-        var target = e.target;
-        if (target.classList.contains('form-input') || target.classList.contains('form-textarea')) {
-          target.classList.remove('error');
-          target.removeAttribute('aria-invalid');
-          var errorEl = document.getElementById('error-' + target.id.replace('field-', ''));
-          if (errorEl) errorEl.classList.remove('visible');
-        }
-      });
-    }
-
     // --- Lightbox ---
     galleryImages = document.querySelectorAll('.feature-image img[data-src-light]');
 
@@ -523,7 +413,7 @@
         '.section-title',
         '.section-subtitle',
         '.feature-block',
-        '.contact-form-wrap'
+        '.contact-info-wrap'
       ];
       var revealEls = [];
       revealSelectors.forEach(function (sel) {
