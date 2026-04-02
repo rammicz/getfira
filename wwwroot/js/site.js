@@ -311,9 +311,11 @@
     lbOverlay.setAttribute('aria-modal', 'true');
     lbOverlay.innerHTML =
       '<button class="lightbox-close" aria-label="Close">&times;</button>' +
-      '<button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</button>' +
-      '<img class="lightbox-img" id="lightbox-img" src="" alt="" />' +
-      '<button class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</button>' +
+      '<div class="lightbox-stage">' +
+        '<button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</button>' +
+        '<img class="lightbox-img" id="lightbox-img" src="" alt="" />' +
+        '<button class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</button>' +
+      '</div>' +
       '<div class="lightbox-dots" aria-live="polite"></div>';
     document.body.appendChild(lbOverlay);
     lbOverlayEl = lbOverlay;
@@ -398,6 +400,13 @@
     lbClose.addEventListener('click', closeLightbox);
     lbPrev.addEventListener('click', function () { showLightbox(currentIndex - 1); });
     lbNext.addEventListener('click', function () { showLightbox(currentIndex + 1); });
+
+    lbImg.addEventListener('click', function (e) {
+      var rect = lbImg.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      if (x < rect.width / 2) showLightbox(currentIndex - 1);
+      else showLightbox(currentIndex + 1);
+    });
 
     lbOverlay.addEventListener('click', function (e) {
       if (e.target === lbOverlay) closeLightbox();
