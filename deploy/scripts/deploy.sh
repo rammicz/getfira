@@ -2,7 +2,8 @@
 set -euo pipefail
 
 # Deploy getfira.io production stack
-# Builds the app image locally and configures host nginx.
+# Builds the app image locally on the VPS.
+# NOTE: nginx config is managed on the server (with certbot SSL) — do NOT overwrite it here.
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEPLOY_DIR="$(dirname "$SCRIPT_DIR")"
@@ -31,15 +32,6 @@ if [ $elapsed -ge $timeout ]; then
     echo "!!! Health check failed after ${timeout}s"
     docker compose -f "$COMPOSE_FILE" logs --tail=50 getfira-app
     exit 1
-fi
-
-# Install nginx config if host nginx exists
-if command -v nginx &> /dev/null || [ -d /etc/nginx ]; then
-    echo "==> Installing nginx config"
-    sudo cp "${DEPLOY_DIR}/nginx/getfira.conf" /etc/nginx/sites-available/getfira
-    sudo ln -sf /etc/nginx/sites-available/getfira /etc/nginx/sites-enabled/getfira
-    sudo nginx -t && sudo systemctl reload nginx
-    echo "==> Nginx config installed and reloaded"
 fi
 
 # Prune old images
