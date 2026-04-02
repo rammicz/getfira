@@ -1,6 +1,8 @@
 services:
   getfira-app:
-    image: ghcr.io/rammicz/getfira:latest
+    build:
+      context: ..
+      dockerfile: Dockerfile
     container_name: getfira-app
     restart: unless-stopped
     environment:
@@ -20,33 +22,13 @@ services:
     restart: unless-stopped
     ports:
       - "80:80"
-      - "443:443"
     volumes:
       - ./nginx/getfira.conf:/etc/nginx/conf.d/getfira.conf:ro
-      - ./nginx/ssl-params.conf:/etc/nginx/conf.d/ssl-params.conf:ro
-      - ./nginx/app-placeholder.html:/usr/share/nginx/html/app-placeholder.html:ro
-      - certbot-webroot:/var/www/certbot:ro
-      - certbot-certs:/etc/letsencrypt:ro
     depends_on:
       getfira-app:
         condition: service_healthy
     networks:
       - getfira-net
-
-  certbot:
-    image: certbot/certbot
-    container_name: getfira-certbot
-    volumes:
-      - certbot-webroot:/var/www/certbot
-      - certbot-certs:/etc/letsencrypt
-    # Renewal runs via deploy/scripts/renew-ssl.sh on a host cron
-    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew --webroot -w /var/www/certbot --quiet; sleep 12h & wait $${!}; done'"
-    networks:
-      - getfira-net
-
-volumes:
-  certbot-webroot:
-  certbot-certs:
 
 networks:
   getfira-net:
