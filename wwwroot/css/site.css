@@ -34,6 +34,8 @@
   --radius: 12px;
   --radius-pill: 999px;
   --transition: 240ms ease;
+  --transition-slow: 480ms ease;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 [data-theme="dark"] {
@@ -561,6 +563,12 @@ img {
   background: var(--c-bg-alt);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
   cursor: pointer;
+  transition: box-shadow var(--transition-slow), transform var(--transition-slow);
+}
+
+.feature-image:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.10);
 }
 
 .feature-image img {
@@ -581,7 +589,7 @@ img {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 200ms ease, visibility 200ms ease;
+  transition: opacity 240ms var(--ease-out-expo), visibility 240ms var(--ease-out-expo);
 }
 
 .lightbox-overlay.open {
@@ -595,6 +603,12 @@ img {
   border-radius: var(--radius);
   box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4);
   object-fit: contain;
+  transform: scale(0.95);
+  transition: transform 300ms var(--ease-out-expo);
+}
+
+.lightbox-overlay.open .lightbox-img {
+  transform: scale(1);
 }
 
 @media (max-width: 767px) {
@@ -713,13 +727,21 @@ img {
 .accordion-panel {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 260ms ease;
+  transition: max-height 320ms var(--ease-out-expo);
 }
 
 .accordion-panel-inner {
   padding: 0 20px 18px;
   font-size: 15px;
   line-height: 1.7;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 200ms ease 80ms, transform 200ms ease 80ms;
+}
+
+.accordion-item[data-open="true"] .accordion-panel-inner {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (min-width: 768px) {
@@ -1009,4 +1031,85 @@ body.scroll-locked { overflow: hidden; }
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+/* ========================================
+   HERO ENTRANCE
+   ======================================== */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  animation: heroFadeUp 700ms var(--ease-out-expo) both;
+  animation-delay: 100ms;
+}
+
+.hero-subtitle {
+  animation: heroFadeUp 700ms var(--ease-out-expo) both;
+  animation-delay: 250ms;
+}
+
+.hero-ctas {
+  animation: heroFadeUp 700ms var(--ease-out-expo) both;
+  animation-delay: 400ms;
+}
+
+/* ========================================
+   SCROLL-REVEAL
+   ======================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 600ms var(--ease-out-expo),
+              transform 600ms var(--ease-out-expo);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger > .reveal:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger > .reveal:nth-child(2) { transition-delay: 120ms; }
+.reveal-stagger > .reveal:nth-child(3) { transition-delay: 240ms; }
+.reveal-stagger > .reveal:nth-child(4) { transition-delay: 360ms; }
+.reveal-stagger > .reveal:nth-child(5) { transition-delay: 480ms; }
+
+/* ========================================
+   FORM SUCCESS ANIMATION
+   ======================================== */
+@keyframes formSuccessIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.form-success.visible {
+  animation: formSuccessIn 500ms var(--ease-out-expo) both;
+}
+
+/* ========================================
+   STEP ARROW PULSE
+   ======================================== */
+@keyframes arrowPulse {
+  0%, 100% { transform: translateX(0); opacity: 0.6; }
+  50% { transform: translateX(4px); opacity: 1; }
+}
+
+.step-arrow.is-visible {
+  animation: arrowPulse 2s ease-in-out infinite;
 }

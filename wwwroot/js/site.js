@@ -505,5 +505,81 @@
         }
       });
     });
+
+    // --- Scroll-Reveal Animations ---
+    (function initReveal() {
+      if (!('IntersectionObserver' in window)) {
+        var fallbacks = document.querySelectorAll('.reveal');
+        for (var i = 0; i < fallbacks.length; i++) {
+          fallbacks[i].classList.add('is-visible');
+        }
+        return;
+      }
+
+      var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Add .reveal to target elements
+      var revealSelectors = [
+        '.section-title',
+        '.section-subtitle',
+        '.feature-block',
+        '.contact-form-wrap'
+      ];
+      var revealEls = [];
+      revealSelectors.forEach(function (sel) {
+        var els = document.querySelectorAll(sel);
+        for (var i = 0; i < els.length; i++) {
+          els[i].classList.add('reveal');
+          revealEls.push(els[i]);
+        }
+      });
+
+      // Add staggered reveals for grid children
+      var staggerConfigs = [
+        { parent: '.proof-grid', children: '.proof-item' },
+        { parent: '.steps-grid', children: '.step-card' }
+      ];
+      staggerConfigs.forEach(function (config) {
+        var parents = document.querySelectorAll(config.parent);
+        for (var p = 0; p < parents.length; p++) {
+          parents[p].classList.add('reveal-stagger');
+          var kids = parents[p].querySelectorAll(config.children);
+          for (var k = 0; k < kids.length; k++) {
+            kids[k].classList.add('reveal');
+            revealEls.push(kids[k]);
+          }
+        }
+      });
+
+      // Step arrows (pulse animation)
+      var stepArrows = document.querySelectorAll('.step-arrow');
+
+      // If reduced-motion, show everything immediately
+      if (prefersReduced) {
+        revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+        for (var a = 0; a < stepArrows.length; a++) {
+          stepArrows[a].classList.add('is-visible');
+        }
+        return;
+      }
+
+      // One-shot IntersectionObserver
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      revealEls.forEach(function (el) { observer.observe(el); });
+      for (var s = 0; s < stepArrows.length; s++) {
+        observer.observe(stepArrows[s]);
+      }
+    })();
   });
 })();
