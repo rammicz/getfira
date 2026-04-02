@@ -27,6 +27,9 @@ jobs:
               User ${{ secrets.KONTAK_USER }}
               StrictHostKeyChecking no
 
+      - name: Ensure deploy directory exists
+        run: ssh kontak "sudo mkdir -p /opt/getfira && sudo chown \$(whoami):\$(whoami) /opt/getfira"
+
       - name: Rsync to VPS
         run: |
           rsync -azP --delete \
