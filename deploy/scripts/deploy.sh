@@ -20,7 +20,7 @@ echo "==> Waiting for health check..."
 timeout=120
 elapsed=0
 while [ $elapsed -lt $timeout ]; do
-    if curl -sf http://127.0.0.1:8080/health > /dev/null 2>&1; then
+    if curl -sf http://127.0.0.1:3100/health > /dev/null 2>&1; then
         echo "==> Health check passed"
         break
     fi
